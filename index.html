@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <h1>Frontend Foxes Homework - Shopping Cart Data Types</h1>
+
+<section>
+  <h2>Understanding what shopping cart is?</h2>
+  <ul>
+    <li>A piece of software</li>
+    <li>Keeps the record of the items a buyer intends to buy (or 'picks up') from the online store. In a pysical store, it means putting the items in the basket you carry around the shop.</li>
+    <li>Acts as an online store's catalog and the cart should enable customers to do the following: </li>
+    <ol>
+      <li>Select products</li>
+      <li>Review what they have selected</li>
+      <li>Make modifications</li>
+      <li>Add extra items if needed</li>
+      <li>Purchase the Products (Make payment)</li>
+    </ol>
+  </ul>
+
+  <h3>Example of shopping carts:</h3>
+  <ul>
+    <li>Hosted shopping carts e.g Shopify</li>
+    <li>Self hosted shopping carts e.g Magento, WooCommerce (Plugin for wordpress)</li>
+    <li>Simple shopping carts e.g Paypal Cart</li>
+  </ul>
+</section>
+
+<section>
+  <h2>A User Story</h2>
+  <p>A user named Jane wants to buy a new baby toy on an online store. She should be able to see: </p>
+  <ul>
+    <li>A storefront to see the products</li>
+    <li>Stock availability</li>
+    <li>Name and description of product</li>
+    <li>Listed price</li>
+    <li>Ability to add Item to basket</li>
+    <li>To go to the basket, review what she selected </li>
+    <li>Add more items</li>
+    <li>Make payment</li>
+  </ul>
+
+  <figure>
+    <img src="cart.jpg" alt="A wireframe of what the user should see and experience"/>
+    <figcaption>Fig1. A low-fidelity wireframe of a user purchasing a baby product on an online store. User should see a storefront, see variety of products being sold, ability to add item to basket, view the basket, modify basket and purchase the item. Wireframe made by myself.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Different data types in this shopping cart scenario</h2>
+  <table>
+    <tr>
+      <th>User Requirements</th>
+      <th>Data Types</th>
+      <th>Examples</th>
+    </tr>
+    <tr>
+      <td>A list of products on the storefront</td>
+      <td>Array</td>
+      <td><code>let products = [ 'Teether Toy', 'Walker', 'Rattles']</code></td>
+    </tr>
+    <tr>
+      <td>A more detailed description on each product to include description</td>
+      <td>Object</td>
+      <td><code>let product = { name: "Teether Toy", description: "Lorem Ipsum", price: 10}</code></td>
+    </tr>
+    <tr>
+      <td>
+        Stock availability
+      </td>
+      <td>
+        Boolean
+      </td>
+      <td><code> let isItemInStock = true </code></td>
+    </tr>
+    <tr>
+      <td>Being able to see the price</td>
+      <td>Number</td>
+      <td><code>let listedPrice = 10 </code></td>
+    </tr>
+    <tr>
+      <td>Name and description of product</td>
+      <td>String</td>
+      <td><code>let toyName = "Play Kitchen"</code></td>
+    </tr>
+    <tr>
+      <td>Item waiting to be added. Add to basket button will trigger the change in number of items in cart icon. It should start with `null`</td>
+      <td>Null</td>
+      <td><code>let basketItems = Null; </code></td>
+    </tr>
+    <tr>
+      <td>Proceed to checkout button</td>
+      <td>Function</td>
+      <td><code>const proceedCheckout = function () { // this is a functionality where it should take user to another page to make payment}</code></td>
+    </tr>
+  </table>
+</section>
+<footer>
+  <p>by cristien natal</p>
+</footer>
+</body>
+</html>
